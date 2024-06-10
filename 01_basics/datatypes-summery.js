@@ -47,3 +47,27 @@ array - object
 object - object
 function -object function
 */
+// ****************************************
+
+// stack(Primitive), Heap (Non-Primitive)
+// If anything will store in stack then its just copy of code
+// if anything will store in heap  mdeans then it will give u reference for original value
+
+let myYutubename = "hqwjdnsnksc";
+
+let anotherName =  myYutubename;
+anotherName = "chaiaurcode";
+
+console.log(myYutubename);
+console.log(anotherName);
+
+let userOne = {
+    email: "abc@gmaol.com",
+    upi:"user@apl"
+}
+let userTwo = userOne
+
+userTwo.email = "deep@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
